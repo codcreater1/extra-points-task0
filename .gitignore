@@ -33,8 +33,10 @@ htmlcov/
 # Environment variables
 .env
 .env.*
+.env.local
+.env.*.local
 
-# IDEs and editors
+# Editors / IDEs
 .vscode/
 .idea/
 *.sublime-project
@@ -44,12 +46,29 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
-# Logs
+# Logs and databases
 *.log
+*.sqlite3
+
+# Caches
+.cache/
 
 # Python build
 pip-wheel-metadata/
 share/python-wheels/
 
-# Optional: local config
+# Testing / virtual env tools
+.tox/
+.nox/
+
+# Misc
+.ropeproject/
+
+# Node / frontend
+node_modules/
+
+# Docker
+docker-compose.override.yml
+
+# Local settings
 local_settings.py
